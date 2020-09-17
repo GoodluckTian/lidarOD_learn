@@ -1,39 +1,34 @@
-# 激光雷达资料
+# 激光雷达资料（obstacle detection and fusion）
 
-#### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+#### 基础知识
+PCL、ROS、CMake、opencv、DP
 
-#### 软件架构
-软件架构说明
+#### IDE
+Qtcreator VScode（ros插件）
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+#### PCL
+编译pcl问题较多，参考网上教程和解决方法。省事也可直接sudo apt-get install  
+pcl官方教程[https://pcl.readthedocs.io/projects/tutorials/en/latest/](https://pcl.readthedocs.io/projects/tutorials/en/latest/)   
+自己的一些代码[https://gitee.com/leox24/pcl_example.git](https://gitee.com/leox24/pcl_example.git)
 
 
-#### 码云特技
+#### ROS
+sudo apt-get install 直接安装  
+官方教程[http://wiki.ros.org/](http://wiki.ros.org/)  
+百度云视频：https://pan.baidu.com/s/1kVPTRMGa4E7SUwVCp1YsjA  提取码:4c0r  
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### 教程/代码
+
+优达 od fusion track 百度云视频：https://pan.baidu.com/s/11Mfx50MR8H6Xce7UBZFG5g 提取码:5rb8  
+传统激光雷达聚类-ros [https://gitee.com/leox24/lidarCluster.git](https://gitee.com/leox24/lidarCluster.git)  
+lidar+camera融合检测-ros [https://gitee.com/leox24/lidarimg_ws.git](https://gitee.com/leox24/lidarimg_ws.git)  
+
+#### KITTI
+
+传统激光雷达检测算法已淘汰，建议上深度学习检测。  
+kitti数据集中obstacle的3D检测 有部分开源代码和论文，建议阅读，需要深度学习基础  
+kitti要梯子  
+
+检测之外还有跟踪可以做，跟踪包括关联匹配、航迹更新等，可以参考Apollo思路。  
+
+Apollo检测源码也可学习，github上有。  
